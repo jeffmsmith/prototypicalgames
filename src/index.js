@@ -1,4 +1,3 @@
-require('./app.scss');
 require('angular');
 require('angular-filter');
 window._ = require('lodash');
@@ -36,4 +35,8 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
   });
 });
 
+require('./theme');
+require('./directives/top-menu/top-menu');
 require('./pages/about/about');
+require('./pages/absurdlyAverageZombies/absurdlyAverageZombies');
+require('./app.scss');

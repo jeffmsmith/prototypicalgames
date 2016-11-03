@@ -1,4 +1,5 @@
-@import "https://fonts.googleapis.com/icon?family=Roboto|Material+Icons";
+@import 'https://fonts.googleapis.com/icon?family=Roboto|Material+Icons';
+@import '../node_modules/angular-material/angular-material.scss';
 
 html, body {
   margin: 0;
@@ -12,4 +13,8 @@ html, body {
 
 body {
   overflow: hidden;
+}
+
+a {
+  text-decoration: none;
 }

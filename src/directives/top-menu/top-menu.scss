@@ -1,0 +1,45 @@
+top-menu {
+    div.from-left {
+        position: relative;
+        -webkit-animation-name: from-left; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-out;
+        animation-name: from-left;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes from-left {
+        0%   {left:0px;}
+        100%  {left:100px;}
+    }
+
+    /* Standard syntax */
+    @keyframes from-left {
+        0%   {left:-100px;}
+        100%  {left:0px;}
+    }
+
+    div.from-up {
+        position: relative;
+        -webkit-animation-name: from-up; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: .45s; /* Safari 4.0 - 8.0 */
+        -webkit-animation-timing-function: ease-out;
+        animation-name: from-up;
+        animation-duration: .45s;
+        animation-timing-function: ease-out;
+    }
+
+    /* Safari 4.0 - 8.0 */
+    @-webkit-keyframes from-up {
+        0%   {top:-100px;}
+        100%  {top:0px;}
+    }
+
+    /* Standard syntax */
+    @keyframes from-up {
+        0%   {top:-100px}
+        100%  {top:0px;}
+    }
+}
