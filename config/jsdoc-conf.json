@@ -1,0 +1,23 @@
+{
+	"source": {
+			"include": [ "src" ],
+			"includePattern": ".+\\.js(doc)?$"
+	},
+	"plugins": [
+		"node_modules/jsdoc/plugins/markdown",
+		"node_modules/angular-jsdoc/common/plugins/ngdoc"
+		],
+	"templates": {
+			"cleverLinks": true,
+			"monospaceLinks": true,
+				"systemName": "Prototypical Games",
+				"footer": "Created by Prototypical Games",
+				"copyright": "2016"
+		},
+	"opts": {
+			"template": "node_modules/angular-jsdoc/angular-template",
+			"destination": "docs",
+			"recurse": true,
+			"readme": "README.md"
+	}
+}
