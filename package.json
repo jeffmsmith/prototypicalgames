@@ -20,7 +20,8 @@
     "angular-messages": "^1.5.7",
     "angular-sanitize": "^1.5.7",
     "angular-ui-router": "^0.3.1",
-    "lodash": "^4.13.1"
+    "lodash": "^4.13.1",
+    "material-colors": "^1.2.0"
   },
   "browserify": {
     "debug": true,
@@ -30,19 +31,22 @@
     ],
     "transform": [
       [
-        "sassify", {
+        "sassify",
+        {
           "auto-inject": true
         }
       ],
       [
-        "babelify", {
+        "babelify",
+        {
           "presets": [
             "es2015"
           ]
         }
       ],
       [
-        "stringify", {
+        "stringify",
+        {
           "appliesTo": {
             "includeExtensions": [
               ".html",

@@ -1,4 +1,23 @@
+@import '../../../node_modules/material-colors/dist/colors.scss';
+
 top-menu {
+    md-toolbar {
+        margin-top: 8px;
+    }
+    div.logo {
+        background-color: $md-red-700;
+        padding: 6px;
+        border-right: 3px solid $md-black;
+    }
+
+    div.logo.a {
+        text-decoration: none;
+    }
+
+    div.nav-links {
+        padding: 8px;
+    }
+
     div.from-left {
         position: relative;
         -webkit-animation-name: from-left; /* Safari 4.0 - 8.0 */
@@ -41,5 +60,43 @@ top-menu {
     @keyframes from-up {
         0%   {top:-100px}
         100%  {top:0px;}
+    }
+
+    a {
+        color: $md-white;
+        position: relative;
+        text-decoration: none;
+        margin-right: 16px;
+    }
+
+    div.nav-links > a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0px;
+        left: 0;
+        background-color: $md-white;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    div.nav-links > a:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+    div.nav-links > a.active:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0px;
+        left: 0;
+        background-color: $md-black;
     }
 }

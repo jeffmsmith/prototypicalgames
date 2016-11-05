@@ -7,7 +7,6 @@ angular.module('app')
         template: require('./top-menu.html'),
         restrict: 'E',
         link: function(scope, element, attr) {
-
         }
     }
 });

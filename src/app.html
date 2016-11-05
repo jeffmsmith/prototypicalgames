@@ -1,9 +1,8 @@
 <top-menu layout="row" layout-align="center center"></top-menu>
-<div layout="row">
-	<div flex layout="column" id="page">
-		<md-content md-whiteframe="1" flex ui-view layout-padding>
-			<!-- default content -->
-			Initial content.
-		</md-content>
-	</div>
+<div layout-fill layout="column" layout-align="start center" id="page" flex>
+	<md-content ui-view md-whiteframe-12dp></md-content>
+	<md-toolbar  layout="column" layout-align="center center" class="footer">
+		<div class="md-body-2">Prototypical Games, !nc. © 2016</div>
+		<div class="md-caption">Play hard and, uh, play harder?</div>
+	</md-toolbar>
 </div>

@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/icon?family=Roboto|Material+Icons';
 @import '../node_modules/angular-material/angular-material.scss';
+@import '../node_modules/material-colors/dist/colors.scss';
 
 html, body {
   margin: 0;
@@ -15,6 +16,9 @@ body {
   overflow: hidden;
 }
 
-a {
-  text-decoration: none;
+md-toolbar.footer {
+  position: absolute;
+  padding: 8px;
+  width: 100%;
+  bottom: 0;
 }
