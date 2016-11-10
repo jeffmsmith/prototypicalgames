@@ -20,6 +20,7 @@
     "angular-messages": "^1.5.7",
     "angular-sanitize": "^1.5.7",
     "angular-ui-router": "^0.3.1",
+    "angular-ui-swiper": "^2.3.6",
     "lodash": "^4.13.1",
     "material-colors": "^1.2.0"
   },

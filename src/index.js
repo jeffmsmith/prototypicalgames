@@ -1,5 +1,6 @@
 require('angular');
 require('angular-filter');
+require('angular-ui-swiper');
 window._ = require('lodash');
 
 var app = angular.module('app', [
@@ -9,6 +10,7 @@ var app = angular.module('app', [
   require('angular-animate'),
   require('angular-aria'),
   require('angular-messages'),
+  'ui.swiper',
   'angular.filter'    
 ]);
 
@@ -37,6 +39,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
 require('./theme');
 require('./directives/top-menu/top-menu');
+require('./directives/absurdly-average-zombies/absurdly-average-zombies');
 require('./pages/about/about');
-require('./pages/absurdlyAverageZombies/absurdlyAverageZombies');
+require('./pages/games/games');
 require('./app.scss');

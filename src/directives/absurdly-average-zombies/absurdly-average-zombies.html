@@ -1,0 +1,31 @@
+<md-card>
+      <md-card-header>
+    <md-card-avatar>
+      <img class="md-user-avatar" src="./img/absurdly-average-zombies-icon.png">
+    </md-card-avatar>
+    <md-card-header-text>
+      <span class="md-title">Absurdly Average Zombies</span>
+      <span class="md-subhead">defend your shanty bunker</span>
+    </md-card-header-text>
+  </md-card-header>
+      <md-card-content layout="column" layout-padding>
+        <div layout="row" layout-align="center center">Zombies are rising up and shambling towards your base of operations!
+        Build turrets to mow them down before they can tear down your base!
+        Features 15 different levels with varying degrees of difficulty!
+        4 different turret types!
+        </div>
+        <div>
+          <md-button href="https://play.google.com/store/apps/details?id=com.PrototypicalGames.AbsurdlyAverageZombies">Install on Android</md-button>
+        </div>
+        <div>
+          <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
+            <div md-virtual-repeat="screenshot in screenshots" class="repeated-item" flex>
+              <img ng-src="./img/aaz-screenshots/{{screenshot}}.png" ng-click="setSelected(screenshot)">
+            </div>
+          </md-virtual-repeat-container>
+        </div>
+        <div layout="row" layout-align="center center">
+          <img class="selectedScreenshot" ng-src="./img/aaz-screenshots/{{selected}}.png">
+        </div>
+    </md-card-content>
+</md-card>
