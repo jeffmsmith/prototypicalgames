@@ -1,7 +1,7 @@
 <md-card>
       <md-card-header>
     <md-card-avatar>
-      <img class="md-user-avatar" src="./img/absurdly-average-zombies-icon.png">
+      <img src="./img/absurdly-average-zombies-icon.png">
     </md-card-avatar>
     <md-card-header-text>
       <span class="md-title">Absurdly Average Zombies</span>
@@ -9,23 +9,32 @@
     </md-card-header-text>
   </md-card-header>
       <md-card-content layout="column" layout-padding>
-        <div layout="row" layout-align="center center">Zombies are rising up and shambling towards your base of operations!
+        <div layout="row">Zombies are rising up and shambling towards your base of operations!
         Build turrets to mow them down before they can tear down your base!
         Features 15 different levels with varying degrees of difficulty!
         4 different turret types!
         </div>
-        <div>
-          <md-button href="https://play.google.com/store/apps/details?id=com.PrototypicalGames.AbsurdlyAverageZombies">Install on Android</md-button>
+        <div layout="row">
+          <a href='https://play.google.com/store/apps/details?id=com.PrototypicalGames.AbsurdlyAverageZombies&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'>
+            <img class="getItOnGooglePlay" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/>
+          </a>
+        </div>
+        <div layout="row" layout-align="start center">
+          <md-button class="md-icon-button" ng-click="prev()" >
+            <md-icon> navigate_before </md-icon>
+          </md-button>
+          <img class="selectedScreenshot" ng-src="./img/aaz-screenshots/{{selected}}.png" />
+          <md-button class="md-icon-button" ng-click="next()" >
+            <md-icon> navigate_next </md-icon>
+          </md-button>
         </div>
         <div>
+          <span class="md-subhead">Action shots</span>
           <md-virtual-repeat-container id="horizontal-container" md-orient-horizontal>
             <div md-virtual-repeat="screenshot in screenshots" class="repeated-item" flex>
-              <img ng-src="./img/aaz-screenshots/{{screenshot}}.png" ng-click="setSelected(screenshot)">
+              <a href="" ng-click="setSelected(screenshot)"><img ng-src="./img/aaz-screenshots/{{screenshot}}.png"></a>
             </div>
           </md-virtual-repeat-container>
-        </div>
-        <div layout="row" layout-align="center center">
-          <img class="selectedScreenshot" ng-src="./img/aaz-screenshots/{{selected}}.png">
         </div>
     </md-card-content>
 </md-card>

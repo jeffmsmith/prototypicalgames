@@ -16,13 +16,9 @@ body {
   overflow: hidden;
 }
 
-md-content {
-  margin-bottom: 146px;
-}
 
 md-toolbar.footer {
-  position: absolute;
-  padding: 8px;
+  position: relative;
   width: 100%;
   bottom: 0;
 }

@@ -1,6 +1,5 @@
 require('angular');
 require('angular-filter');
-require('angular-ui-swiper');
 window._ = require('lodash');
 
 var app = angular.module('app', [
@@ -10,7 +9,6 @@ var app = angular.module('app', [
   require('angular-animate'),
   require('angular-aria'),
   require('angular-messages'),
-  'ui.swiper',
   'angular.filter'    
 ]);
 

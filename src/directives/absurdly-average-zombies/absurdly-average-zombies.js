@@ -9,7 +9,6 @@ angular.module('app')
         link: function(scope, element, attr) {
           scope.screenshots = [
             'aaz-screenshot-1',
-            'aaz-screenshot-2',
             'aaz-screenshot-3',
             'aaz-screenshot-4',
             'aaz-screenshot-5',
@@ -21,6 +20,12 @@ angular.module('app')
           scope.selected = scope.screenshots[0];
           scope.setSelected = function(item) {
             scope.selected = item;
+          }
+          scope.prev = function() {
+            scope.selected = scope.screenshots[(scope.screenshots.indexOf(scope.selected) - 1 + scope.screenshots.length)  % scope.screenshots.length];
+          }
+          scope.next = function() {
+            scope.selected = scope.screenshots[(scope.screenshots.indexOf(scope.selected) + 1) % scope.screenshots.length];
           }
         }
     }
