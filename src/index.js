@@ -29,7 +29,7 @@ app.config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
      */
     controller: function($rootScope, $scope, $state){
       if ($state.current.name === 'prototypical') {
-        $state.transitionTo('prototypical.about', { reload:true });
+        $state.transitionTo('prototypical.games', { reload:true });
       }
     }
   });
