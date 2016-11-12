@@ -7,15 +7,18 @@ top-menu {
     div.logo {
         background-color: $md-light-blue-700;
         padding: 6px;
-        border-right: 3px solid $md-white;
     }
 
     div.logo.a {
         text-decoration: none;
     }
 
+    div.divider {
+        background-color: $md-white;
+        width: 1px;
+    }
+
     div.nav-links {
-        padding: 8px;
     }
 
     div.from-left {
