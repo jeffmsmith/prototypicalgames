@@ -1,8 +1,12 @@
 <div layout="column" id="page" flex>
 	<top-menu layout="row" layout-align="center center"></top-menu>
-	<md-content md-whiteframe="1" ui-view flex></md-content>
-	<md-toolbar layout="column" layout-align="center center" class="footer">
-		<div class="md-body-2">Prototypical Games</div>
-		<div class="md-caption">Play hard and, uh, play harder?</div>
-	</md-toolbar>
+	<md-content flex>
+		<div layout="row" layout-align="center center" md-whiteframe="1" >
+			<div class="content" flex ui-view></div>
+		</div>
+		<div layout="column" layout-align="center center" class="footer" flex>
+		  <div class="md-body-2">Prototypical Games</div>
+		  <div class="md-caption">Play hard and, uh, play harder?</div>
+	    </div>
+	</md-content>
 </div>

@@ -1,9 +1,6 @@
 @import '../../../node_modules/material-colors/dist/colors.scss';
 
 top-menu {
-    md-toolbar {
-        margin-top: 8px;
-    }
     div.logo {
         background-color: $md-light-blue-700;
         padding: 6px;
@@ -14,7 +11,7 @@ top-menu {
     }
 
     div.divider {
-        background-color: $md-white;
+        background-color: $md-black;
         width: 1px;
     }
 
