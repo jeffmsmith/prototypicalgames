@@ -40,4 +40,5 @@ require('./directives/top-menu/top-menu');
 require('./directives/absurdly-average-zombies/absurdly-average-zombies');
 require('./pages/about/about');
 require('./pages/games/games');
+require('./pages/privacy-policy/privacy-policy');
 require('./app.scss');
